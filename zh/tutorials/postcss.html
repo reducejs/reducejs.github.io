@@ -1,0 +1,662 @@
+<!DOCTYPE HTML>
+<html lang="zh-tw" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>PostCSS | Reduce</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-extend-default-theme/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../tutorials/hot-module-replacement.html" />
+    
+    
+    <link rel="prev" href="../tutorials/transform.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="2.6"
+        data-chapter-title="PostCSS"
+        data-filepath="tutorials/postcss.md"
+        data-basepath=".."
+        data-revision="Mon May 16 2016 19:46:21 GMT+0800 (CST)"
+        data-innerlanguage="zh">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        介紹
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="quick-start/index.html">
+            
+                
+                    <a href="../quick-start/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        快速入门
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="quick-start/what-is-reduce.html">
+            
+                
+                    <a href="../quick-start/what-is-reduce.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Reduce是什么
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="quick-start/getting-started.html">
+            
+                
+                    <a href="../quick-start/getting-started.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        基本使用
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="tutorials/index.html">
+            
+                
+                    <a href="../tutorials/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        教程
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="tutorials/examples.html">
+            
+                
+                    <a href="../tutorials/examples.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        实例
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="tutorials/component.html">
+            
+                
+                    <a href="../tutorials/component.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        组件规范
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="tutorials/how-to-bundle.html">
+            
+                
+                    <a href="../tutorials/how-to-bundle.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        打包策略
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="tutorials/plugin.html">
+            
+                
+                    <a href="../tutorials/plugin.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        插件机制
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="tutorials/transform.html">
+            
+                
+                    <a href="../tutorials/transform.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        Transform
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.6" data-path="tutorials/postcss.html">
+            
+                
+                    <a href="../tutorials/postcss.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        PostCSS
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="tutorials/hot-module-replacement.html">
+            
+                
+                    <a href="../tutorials/hot-module-replacement.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        模块热替换
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="api/index.html">
+            
+                
+                    <a href="../api/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        API
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="api/nodejs.html">
+            
+                
+                    <a href="../api/nodejs.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Node.js
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="api/commond-line.html">
+            
+                
+                    <a href="../api/commond-line.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        命令行
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="api/configure.html">
+            
+                
+                    <a href="../api/configure.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        配置
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="recipes/index.html">
+            
+                
+                    <a href="../recipes/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Recipes
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="recipes/css-namespace.html">
+            
+                
+                    <a href="../recipes/css-namespace.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        CSS命名空间
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="recipes/sprite.html">
+            
+                
+                    <a href="../recipes/sprite.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        自动拼图
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="recipes/react.html">
+            
+                
+                    <a href="../recipes/react.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        React项目
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    本書使用 GitBook 釋出
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Reduce</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="&#x4EC0;&#x4E48;&#x662F;postcss">&#x4EC0;&#x4E48;&#x662F;PostCSS</h2>
+<p><a href="https://github.com/postcss/postcss" target="_blank">PostCSS</a>&#x662F;&#x4E00;&#x6B3E;&#x62E5;&#x6709;&#x975E;&#x5E38;&#x7075;&#x6D3B;&#x7684;&#x63D2;&#x4EF6;&#x673A;&#x5236;&#x7684;CSS&#x9884;&#x5904;&#x7406;&#x5DE5;&#x5177;&#x3002;
+&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7F16;&#x5199;&#x63D2;&#x4EF6;&#x6765;&#x5B9E;&#x73B0;&#x5177;&#x4F53;&#x7684;&#x9884;&#x7F16;&#x8BD1;&#x529F;&#x80FD;&#xFF0C;&#x5982;&#x53D8;&#x91CF;&#x58F0;&#x660E;&#x3001;mixin&#x7B49;&#x3002;</p>
+<h2 id="&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x63D2;&#x4EF6;">&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x63D2;&#x4EF6;</h2>
+<p>Reduce&#x901A;&#x8FC7;&#x4F7F;&#x7528;<a href="https://github.com/reducejs/reduce-css-postcss" target="_blank">reduce-css-postcss</a>&#x6765;&#x652F;&#x6301;<a href="https://github.com/postcss/postcss" target="_blank">PostCSS</a>&#x3002;
+&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x5982;&#x4E0B;<a href="https://github.com/postcss/postcss" target="_blank">PostCSS</a>&#x63D2;&#x4EF6;&#x6765;&#x652F;&#x6301;<a href="http://sass-lang.com/" target="_blank">SASS</a>&#x98CE;&#x683C;&#x7684;&#x6837;&#x5F0F;&#x6E90;&#x7801;&#x7F16;&#x5199;&#xFF1A;</p>
+<ul>
+<li><a href="https://github.com/reducejs/postcss-simple-import" target="_blank">postcss-simple-import</a>&#x3002;&#x652F;&#x6301;<code>@import</code>&#x3002;</li>
+<li><a href="https://github.com/reducejs/postcss-custom-url" target="_blank">postcss-custom-url</a>&#x3002;&#x81EA;&#x52A8;&#x53D8;&#x6362;CSS&#x4E2D;&#x7684;url&#x3002;</li>
+<li><a href="https://github.com/jonathantneal/postcss-advanced-variables" target="_blank">postcss-advanced-variables</a>&#x3002;&#x652F;&#x6301;&#x53D8;&#x91CF;&#x3002;</li>
+<li><a href="https://github.com/postcss/postcss-mixins" target="_blank">postcss-mixins</a>&#x3002;&#x652F;&#x6301;mixin&#x3002;</li>
+<li><a href="https://github.com/postcss/postcss-nested" target="_blank">postcss-nested</a>&#x3002;&#x652F;&#x6301;&#x5D4C;&#x5957;&#x3002;</li>
+<li><a href="https://github.com/travco/postcss-extend" target="_blank">postcss-extend</a>&#x3002;&#x652F;&#x6301;&#x6269;&#x5C55;&#x3002;</li>
+<li><a href="https://github.com/postcss/autoprefixer" target="_blank">autoprefixer</a>&#x3002;&#x81EA;&#x52A8;&#x6DFB;&#x52A0;&#x6D4F;&#x89C8;&#x5668;&#x5382;&#x5546;&#x524D;&#x7F00;&#x3002;</li>
+</ul>
+<h2 id="import-vs-external">@import v.s. @external</h2>
+<p><code>@import</code>&#x7531;<a href="https://github.com/reducejs/postcss-simple-import" target="_blank">postcss-simple-import</a>&#x5904;&#x7406;&#xFF0C;<strong>&#x5728;&#x9884;&#x5904;&#x7406;&#x4E2D;</strong>&#x8D77;&#x4F5C;&#x7528;&#xFF0C;&#x5F71;&#x54CD;<strong>&#x7F16;&#x8BD1;</strong>&#x7ED3;&#x679C;&#x3002;</p>
+<p>&#x8B6C;&#x5982;&#x4E0B;&#x9762;&#x7684;&#x60C5;&#x51B5;&#x4E2D;&#xFF0C;&#x5728;&#x9884;&#x5904;&#x7406;&#x65F6;&#xFF0C;&#x5FC5;&#x987B;&#x5C06;vars.css&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x63D2;&#x5165;&#x5230;a.css&#x4E2D;&#x76F8;&#x5E94;&#x4F4D;&#x7F6E;&#xFF0C;&#x540E;&#x8005;&#x624D;&#x80FD;&#x5904;&#x7406;&#x6210;&#x9884;&#x671F;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
+<pre><code class="lang-scss"><span class="hljs-comment">/* vars.css */</span>
+
+<span class="hljs-variable">$red</span><span class="hljs-value">: <span class="hljs-hexcolor">#ff0000</span>;</span>
+<span class="hljs-variable">$green</span><span class="hljs-value">: <span class="hljs-hexcolor">#00ff00</span>;</span>
+<span class="hljs-variable">$blue</span><span class="hljs-value">: <span class="hljs-hexcolor">#0000ff</span>;</span>
+</code></pre>
+<pre><code class="lang-scss"><span class="hljs-comment">/* a.css */</span>
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;./vars.css&quot;</span>;</span>
+<span class="hljs-tag">a</span> {
+  <span class="hljs-attribute">color</span><span class="hljs-value">: <span class="hljs-variable">$red</span>;</span>
+}
+</code></pre>
+<p>&#x9884;&#x5904;&#x7406;&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code class="lang-css"><span class="hljs-tag">a</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#ff0000</span></span></span>;
+}</span>
+</code></pre>
+<p><code>@external</code>&#x53EA;&#x662F;&#x4F9D;&#x8D56;&#x58F0;&#x660E;&#x3002;
+<strong>&#x5728;&#x9884;&#x5904;&#x7406;&#x540E;</strong>&#xFF0C;&#x8FDB;&#x884C;&#x4F9D;&#x8D56;&#x89E3;&#x6790;&#x65F6;&#x53EF;&#x786E;&#x5B9A;&#x6A21;&#x5757;&#x4E4B;&#x95F4;&#x7684;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#xFF0C;&#x5F71;&#x54CD;<strong>&#x6253;&#x5305;</strong>&#x7ED3;&#x679C;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5C06;&#x4E0A;&#x9762;&#x4F8B;&#x5B50;&#x4E2D;&#x7684;<code>@import</code>&#x6362;&#x6210;<code>@external</code>&#xFF0C;&#x5219;&#x5C06;a.css&#x6253;&#x6210;&#x5305;&#x540E;&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-scss"><span class="hljs-tag">a</span> {
+  <span class="hljs-attribute">color</span><span class="hljs-value">: <span class="hljs-variable">$red</span>;</span>
+}
+</code></pre>
+<p>&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x5728;&#x9884;&#x5904;&#x7406;a.css&#x65F6;&#xFF0C;&#x5E76;&#x672A;&#x5F15;&#x5165;&#x53D8;&#x91CF;&#x7684;&#x5B9A;&#x4E49;&#x3002;
+&#x540C;&#x65F6;&#x5728;&#x6253;&#x5305;&#x65F6;&#xFF0C;&#x867D;&#x7136;a.css&#x4F9D;&#x8D56;&#x4E86;vars.css&#xFF0C;&#x4F46;vars.css&#x7684;&#x9884;&#x5904;&#x7406;&#x7ED3;&#x679C;&#x4E3A;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x5185;&#x5BB9;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x6B63;&#x786E;&#x4F7F;&#x7528;<code>@external</code>&#x7684;&#x4F8B;&#x5B50;&#x3002;</p>
+<pre><code class="lang-css"><span class="hljs-comment">/* a.css */</span>
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">external</span> <span class="hljs-string">&quot;reset&quot;</span></span>;
+<span class="hljs-tag">a</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> red</span></span>;
+}</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-comment">/* b.css */</span>
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">external</span> <span class="hljs-string">&quot;reset&quot;</span></span>;
+<span class="hljs-tag">b</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> green</span></span>;
+}</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-comment">/* reset.css */</span>
+
+<span class="hljs-tag">a</span>, <span class="hljs-tag">b</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> black</span></span>;
+}</span>
+</code></pre>
+<p>&#x6253;&#x6210;&#x4E00;&#x4E2A;&#x5305;&#x7684;&#x914D;&#x7F6E;&#xFF1A;</p>
+<pre><code class="lang-js">{
+  css: {
+    bundleOptions: <span class="hljs-string">&apos;bundle.css&apos;</span>,
+  },
+}
+</code></pre>
+<p>&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code class="lang-css"><span class="hljs-comment">/* bundle.css */</span>
+
+<span class="hljs-tag">a</span>, <span class="hljs-tag">b</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> black</span></span>;
+}</span>
+
+<span class="hljs-tag">a</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> red</span></span>;
+}</span>
+
+<span class="hljs-tag">b</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> green</span></span>;
+}</span>
+</code></pre>
+<p>&#x6253;&#x6210;&#x591A;&#x4E2A;&#x5305;&#x7684;&#x914D;&#x7F6E;&#xFF1A;</p>
+<pre><code class="lang-js">{
+  css: {
+    bundleOptions: {
+      <span class="hljs-comment">// &#x5206;&#x522B;&#x4EE5;a.css&#x548C;b.css&#x4E3A;&#x5165;&#x53E3;&#x751F;&#x6210;&#x4E24;&#x4E2A;&#x5305;</span>
+      groups: [<span class="hljs-string">&apos;a.css&apos;</span>, <span class="hljs-string">&apos;b.css&apos;</span>],
+      <span class="hljs-comment">// &#x63D0;&#x53D6;a.css&#x548C;b.css&#x7684;&#x516C;&#x5171;&#x4F9D;&#x8D56;&#xFF0C;&#x751F;&#x6210;&#x7B2C;&#x4E09;&#x4E2A;&#x5305;</span>
+      common: <span class="hljs-string">&apos;c.css&apos;</span>,
+    },
+  },
+}
+</code></pre>
+<p>&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code class="lang-css"><span class="hljs-comment">/* &#x5FC5;&#x987B;&#x5728;a.css&#x548C;b.css&#x52A0;&#x8F7D;&#x524D;&#x5148;&#x52A0;&#x8F7D;c.css */</span>
+
+<span class="hljs-comment">/* a.css */</span>
+<span class="hljs-tag">a</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> red</span></span>;
+}</span>
+
+<span class="hljs-comment">/* b.css */</span>
+<span class="hljs-tag">b</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> green</span></span>;
+}</span>
+
+<span class="hljs-comment">/* c.css */</span>
+<span class="hljs-tag">a</span>, <span class="hljs-tag">b</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> black</span></span>;
+}</span>
+</code></pre>
+<p><strong>&#x533A;&#x522B;&#x5C0F;&#x7ED3;</strong></p>
+<ul>
+<li><code>@external</code>&#x7684;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x662F;&#x9884;&#x5904;&#x7406;&#x540E;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x6240;&#x4EE5;&#x4E00;&#x5B9A;&#x662F;&#x8981;&#x6709;&#x5177;&#x4F53;CSS&#x7684;&#x624D;&#x6709;&#x610F;&#x4E49;&#x3002;</li>
+<li><code>@import</code>&#x7684;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x662F;&#x9884;&#x5904;&#x7406;&#x4E2D;&#x7684;&#x8F85;&#x52A9;&#x5185;&#x5BB9;&#xFF0C;&#x4E00;&#x822C;&#x662F;&#x53D8;&#x91CF;&#x5B9A;&#x4E49;&#x3001;mixin&#x7B49;&#x3002;</li>
+</ul>
+<h2 id="url&#x53D8;&#x6362;">url&#x53D8;&#x6362;</h2>
+<p>&#x7531;&#x4E8E;<code>@import</code>&#x548C;<code>@external</code>&#x7684;&#x5F71;&#x54CD;&#xFF0C;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x6700;&#x7EC8;&#x51FA;&#x73B0;&#x6253;&#x5305;&#x7ED3;&#x679C;&#x4E2D;&#x65F6;&#xFF0C;<code>url()</code>&#x4E2D;&#x7684;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#x9700;&#x8981;&#x505A;&#x4E00;&#x4E9B;&#x8C03;&#x6574;&#x3002;
+&#x8FD9;&#x4E3B;&#x8981;&#x7531;<a href="https://github.com/reducejs/postcss-custom-url" target="_blank">postcss-custom-url</a>&#x5B8C;&#x6210;&#x3002;</p>
+<p>&#x5728;Reduce&#x4E2D;&#xFF0C;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x5C0F;&#x4E8E;10k&#x7684;&#x8D44;&#x6E90;&#x5C06;&#x4EE5;base-64&#x7684;&#x5F62;&#x5F0F;&#x5185;&#x5D4C;&#xFF0C;&#x5176;&#x5B83;&#x5219;&#x6839;&#x636E;&#x914D;&#x7F6E;&#x8FDB;&#x884C;&#x76F8;&#x5E94;&#x7684;&#x62F7;&#x8D1D;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x5728;&#x914D;&#x7F6E;&#x4E2D;&#x4FEE;&#x6539;&#x8FD9;&#x4E2A;&#x4E0A;&#x9650;&#x3002;</p>
+<pre><code class="lang-js">{
+  css: {
+    <span class="hljs-comment">// &#x5C0F;&#x4E8E;5k&#x7684;&#x8D44;&#x6E90;&#x88AB;inline</span>
+    <span class="hljs-comment">// &#x5176;&#x4F59;&#x7684;&#x62F7;&#x8D1D;&#x5230;/path/to/assets</span>
+    dest: [<span class="hljs-string">&apos;/path/to/dest&apos;</span>, <span class="hljs-literal">null</span>, { maxSize: <span class="hljs-number">5</span>, assetOutFolder: <span class="hljs-string">&apos;/path/to/assets&apos;</span> }],
+  }
+}
+</code></pre>
+<h2 id="&#x4FEE;&#x6539;&#x63D2;&#x4EF6;&#x5217;&#x8868;">&#x4FEE;&#x6539;&#x63D2;&#x4EF6;&#x5217;&#x8868;</h2>
+<h3 id="&#x6DFB;&#x52A0;&#x63D2;&#x4EF6;">&#x6DFB;&#x52A0;&#x63D2;&#x4EF6;</h3>
+<p>&#x76F4;&#x63A5;&#x6307;&#x5B9A;&#x9700;&#x8981;&#x6DFB;&#x52A0;&#x7684;&#x63D2;&#x4EF6;&#x5217;&#x8868;&#xFF1A;</p>
+<pre><code class="lang-js">{
+  css: {
+    reduce: {
+      postcss: creators,
+    },
+  },
+}
+</code></pre>
+<p><strong>creators</strong></p>
+<p>Type: <code>Array</code></p>
+<p>&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x53EF;&#x4EE5;&#x6709;&#x4EE5;&#x4E0B;&#x4E09;&#x79CD;&#x5F62;&#x5F0F;&#xFF08;&#x4EE5;<code>postcss-modules</code>&#x4E3A;&#x4F8B;&#xFF09;</p>
+<ul>
+<li><code>require(&apos;postcss-modules&apos;)</code></li>
+<li><code>require(&apos;postcss-modules&apos;)(opts)</code></li>
+<li><code>[require(&apos;postcss-modules&apos;)&#xFF0C;opts]</code></li>
+</ul>
+<h3 id="&#x66F4;&#x590D;&#x6742;&#x7684;&#x64CD;&#x4F5C;">&#x66F4;&#x590D;&#x6742;&#x7684;&#x64CD;&#x4F5C;</h3>
+<p>&#x6307;&#x5B9A;&#x51FD;&#x6570;&#x64CD;&#x4F5C;<a href="https://github.com/reducejs/postcss-processor-splicer" target="_blank">pipeline</a>&#x5BF9;&#x8C61;&#x3002;</p>
+<pre><code class="lang-js">{
+  css: {
+    reduce: {
+      postcss: pipeline =&gt; {
+        <span class="hljs-comment">// &#x4F7F;&#x7528;postcss-simple-vars&#x4EE3;&#x66FF;postcss-advanced-variables</span>
+        pipeline.splice(<span class="hljs-string">&apos;postcss-advanced-variables&apos;</span>, <span class="hljs-number">1</span>, <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;postcss-simple-vars&apos;</span>))
+
+        <span class="hljs-keyword">var</span> creator = pipeline.get(<span class="hljs-string">&apos;autoprefixer&apos;</span>)
+        <span class="hljs-comment">// &#x7ED9;autoprefixer&#x6307;&#x5B9A;&#x914D;&#x7F6E;</span>
+        creator[<span class="hljs-number">1</span>] = { add: <span class="hljs-literal">false</span>, browsers: [] }
+      },
+    },
+  },
+}
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../tutorials/transform.html" class="navigation navigation-prev " aria-label="Previous page: Transform"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../tutorials/hot-module-replacement.html" class="navigation navigation-next " aria-label="Next page: 模块热替换"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-edit-link/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-github/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-anker-enable/anker.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"edit-link":{"base":"https://github.com/reducejs/reducejs-handbook/tree/master","label":"Edit This Page"},"github":{"url":"https://github.com/reducejs/reduce-web-component/"},"anker-enable":{},"extend-default-theme":{},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

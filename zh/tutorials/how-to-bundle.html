@@ -1,0 +1,559 @@
+<!DOCTYPE HTML>
+<html lang="zh-tw" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>打包策略 | Reduce</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-extend-default-theme/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../tutorials/plugin.html" />
+    
+    
+    <link rel="prev" href="../tutorials/component.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="2.3"
+        data-chapter-title="打包策略"
+        data-filepath="tutorials/how-to-bundle.md"
+        data-basepath=".."
+        data-revision="Mon May 16 2016 19:46:21 GMT+0800 (CST)"
+        data-innerlanguage="zh">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        介紹
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="quick-start/index.html">
+            
+                
+                    <a href="../quick-start/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        快速入门
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="quick-start/what-is-reduce.html">
+            
+                
+                    <a href="../quick-start/what-is-reduce.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Reduce是什么
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="quick-start/getting-started.html">
+            
+                
+                    <a href="../quick-start/getting-started.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        基本使用
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="tutorials/index.html">
+            
+                
+                    <a href="../tutorials/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        教程
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="tutorials/examples.html">
+            
+                
+                    <a href="../tutorials/examples.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        实例
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="tutorials/component.html">
+            
+                
+                    <a href="../tutorials/component.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        组件规范
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3" data-path="tutorials/how-to-bundle.html">
+            
+                
+                    <a href="../tutorials/how-to-bundle.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        打包策略
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="tutorials/plugin.html">
+            
+                
+                    <a href="../tutorials/plugin.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        插件机制
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="tutorials/transform.html">
+            
+                
+                    <a href="../tutorials/transform.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        Transform
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="tutorials/postcss.html">
+            
+                
+                    <a href="../tutorials/postcss.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        PostCSS
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="tutorials/hot-module-replacement.html">
+            
+                
+                    <a href="../tutorials/hot-module-replacement.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        模块热替换
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="api/index.html">
+            
+                
+                    <a href="../api/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        API
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="api/nodejs.html">
+            
+                
+                    <a href="../api/nodejs.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Node.js
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="api/commond-line.html">
+            
+                
+                    <a href="../api/commond-line.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        命令行
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="api/configure.html">
+            
+                
+                    <a href="../api/configure.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        配置
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="recipes/index.html">
+            
+                
+                    <a href="../recipes/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Recipes
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="recipes/css-namespace.html">
+            
+                
+                    <a href="../recipes/css-namespace.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        CSS命名空间
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="recipes/sprite.html">
+            
+                
+                    <a href="../recipes/sprite.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        自动拼图
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="recipes/react.html">
+            
+                
+                    <a href="../recipes/react.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        React项目
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    本書使用 GitBook 釋出
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Reduce</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <p>Reduce&#x4F7F;&#x7528;<a href="https://github.com/reducejs/common-bundle" target="_blank">common-bundle</a>&#x8FDB;&#x884C;&#x6A21;&#x5757;&#x7684;&#x5C01;&#x88C5;&#x548C;&#x6253;&#x5305;&#xFF0C;&#x652F;&#x6301;&#x7075;&#x6D3B;&#x7684;&#x516C;&#x5171;&#x5305;&#x63D0;&#x53D6;&#x7B56;&#x7565;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> reduce = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;reduce-web-component&apos;</span>)
+<span class="hljs-comment">// &#x5728;config&#x4E2D;&#x6307;&#x5B9A;&#x6253;&#x5305;&#x7B56;&#x7565;</span>
+reduce.bundle(config).then(() =&gt; {
+  <span class="hljs-comment">// &#x6253;&#x5305;&#x7ED3;&#x675F;</span>
+})
+</code></pre>
+<h2 id="&#x5355;&#x5305;">&#x5355;&#x5305;</h2>
+<p>&#x53EF;&#x4EE5;&#x5C06;&#x6240;&#x6709;JS&#x6216;CSS&#x6253;&#x6210;&#x4E00;&#x4E2A;&#x5305;&#x3002;</p>
+<p>&#x5047;&#x5982;&#x9875;&#x9762;A&#x6709;&#x5165;&#x53E3;</p>
+<ul>
+<li>js: <code>/path/to/src/page/A/index.js</code></li>
+<li>css: <code>/path/to/src/page/A/index.css</code></li>
+</ul>
+<p>&#x5219;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x914D;&#x7F6E;&#x5C06;&#x6240;&#x6709;&#x5165;&#x53E3;&#x53CA;&#x5176;&#x4F9D;&#x8D56;&#x6253;&#x6210;&#x4E00;&#x5305;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> config = {
+  dest: <span class="hljs-string">&apos;build&apos;</span>,
+  reduce: {
+    basedir: <span class="hljs-string">&apos;/path/to/src&apos;</span>,
+  },
+  js: { 
+    entries: <span class="hljs-string">&apos;page/**/index.js&apos;</span>,
+    <span class="hljs-comment">// &#x6240;&#x6709;entries&#x53CA;&#x5176;&#x4F9D;&#x8D56;&#x51FA;&#x73B0;&#x5728;&#x4E00;&#x4E2A;&#x5305;&#x4E2D;</span>
+    <span class="hljs-comment">// &#x8DEF;&#x5F84;&#x4E3A;/path/to/build/bundle.js</span>
+    bundleOptions: <span class="hljs-string">&apos;bundle.js&apos;</span>,
+  },
+  css: { 
+    entries: <span class="hljs-string">&apos;page/**/index.css&apos;</span>,
+    <span class="hljs-comment">// &#x6240;&#x6709;entries&#x53CA;&#x5176;&#x4F9D;&#x8D56;&#x51FA;&#x73B0;&#x5728;&#x4E00;&#x4E2A;&#x5305;&#x4E2D;</span>
+    <span class="hljs-comment">// &#x8DEF;&#x5F84;&#x4E3A;/path/to/build/bundle.css</span>
+    bundleOptions: <span class="hljs-string">&apos;bundle.css&apos;</span>,
+  },
+}
+</code></pre>
+<h2 id="&#x6240;&#x6709;&#x9875;&#x9762;&#x5171;&#x4EAB;&#x4E00;&#x4E2A;&#x516C;&#x5171;&#x5305;">&#x6240;&#x6709;&#x9875;&#x9762;&#x5171;&#x4EAB;&#x4E00;&#x4E2A;&#x516C;&#x5171;&#x5305;</h2>
+<p>&#x5047;&#x5982;&#x9875;&#x9762;A&#x6709;&#x5165;&#x53E3;</p>
+<ul>
+<li>js: <code>/path/to/src/page/A/index.js</code></li>
+<li>css: <code>/path/to/src/page/A/index.css</code></li>
+</ul>
+<p>&#x5219;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x914D;&#x7F6E;&#x4E3A;&#x6BCF;&#x4E2A;&#x5165;&#x53E3;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5305;&#xFF0C;&#x5E76;&#x989D;&#x5916;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x516C;&#x5171;&#x5305;&#x4EE5;&#x8DE8;&#x9875;&#x9762;&#x5171;&#x4EAB;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> config = {
+  dest: <span class="hljs-string">&apos;build&apos;</span>,
+  reduce: {
+    basedir: <span class="hljs-string">&apos;/path/to/src&apos;</span>,
+  },
+  js: { 
+    entries: <span class="hljs-string">&apos;page/**/index.js&apos;</span>,
+    bundleOptions: {
+      <span class="hljs-comment">// &#x6BCF;&#x5339;&#x914D;&#x5230;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#xFF0C;&#x4FBF;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5305;</span>
+      <span class="hljs-comment">// &#x5176;&#x8DEF;&#x5F84;&#x4E3A;/path/to/build/page/**/index.js</span>
+      groups: <span class="hljs-string">&apos;page/**/index.js&apos;</span>,
+      <span class="hljs-comment">// &#x516C;&#x5171;&#x5305;&#x8DEF;&#x5F84;&#x4E3A;/path/to/build/common.js</span>
+      common: <span class="hljs-string">&apos;common.js&apos;</span>,
+    },
+  },
+  css: { 
+    entries: <span class="hljs-string">&apos;page/**/index.css&apos;</span>,
+    bundleOptions: {
+      <span class="hljs-comment">// &#x6BCF;&#x5339;&#x914D;&#x5230;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#xFF0C;&#x4FBF;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5305;</span>
+      <span class="hljs-comment">// &#x5176;&#x8DEF;&#x5F84;&#x4E3A;/path/to/build/page/**/index.css</span>
+      groups: <span class="hljs-string">&apos;page/**/index.css&apos;</span>,
+      <span class="hljs-comment">// &#x516C;&#x5171;&#x5305;&#x8DEF;&#x5F84;&#x4E3A;/path/to/build/common.css</span>
+      common: <span class="hljs-string">&apos;common.css&apos;</span>,
+    },
+  },
+}
+</code></pre>
+<p>&#x5982;&#x679C;&#x53BB;&#x6389;&#x4E0A;&#x9762;&#x914D;&#x7F6E;&#x4E2D;&#x7684;<code>common</code>&#x9009;&#x9879;&#xFF0C;&#x5219;&#x4E0D;&#x4EA7;&#x751F;&#x516C;&#x5171;&#x5305;&#x3002;</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../tutorials/component.html" class="navigation navigation-prev " aria-label="Previous page: 组件规范"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../tutorials/plugin.html" class="navigation navigation-next " aria-label="Next page: 插件机制"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-edit-link/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-github/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-anker-enable/anker.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"edit-link":{"base":"https://github.com/reducejs/reducejs-handbook/tree/master","label":"Edit This Page"},"github":{"url":"https://github.com/reducejs/reduce-web-component/"},"anker-enable":{},"extend-default-theme":{},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
